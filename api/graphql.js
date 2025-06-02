@@ -10,6 +10,7 @@ import { resolvers } from '../src/graphql/resolvers.js';
 const server = new ApolloServer({
   typeDefs: immobileTypes,
   resolvers,
+  introspection: true // permite schema explorer em produção
 });
 
 const handler = startServerAndCreateNextHandler(server, {
