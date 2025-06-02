@@ -5,8 +5,7 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "dev": "vercel dev",
-    "build": "vercel build"
+    "dev": "next dev"
   },
   "keywords": [],
   "author": "",
