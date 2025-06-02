@@ -3,9 +3,9 @@ import { startServerAndCreateNextHandler } from '@as-integrations/next';
 import { config } from 'dotenv';
 config();
 
-import { connectToDb } from '../database/db.js';
-import { immobileTypes } from '../graphql/schema.js';
-import { resolvers } from '../graphql/resolvers.js';
+import { connectToDb } from '../src/database/db.js';
+import { immobileTypes } from '../src/graphql/schema.js';
+import { resolvers } from '../src/graphql/resolvers.js';
 
 const server = new ApolloServer({
   typeDefs: immobileTypes,
