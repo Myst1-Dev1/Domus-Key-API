@@ -9,7 +9,7 @@ import { immobileTypes } from '../src/graphql/schema.js';
 import { resolvers } from '../src/graphql/resolvers.js';
 
 const cors = Cors({
-  origin: ['http://localhost:4200'],
+  origin: ['https://domus-key.vercel.app'],
   credentials: true,
 });
 
